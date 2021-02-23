@@ -8,10 +8,8 @@ from texttospeech.audio import tts
 from texttospeech.bot.inline.inline_query_result_voice import InlineQueryResultVoice
 from texttospeech.db.models import AudioOrigin, Settings, Audio
 from texttospeech.util import config
-from texttospeech.util.antiflood import AntiFlood
 
 latest = {}
-antiflood = AntiFlood(max_amount=1, timeout=3)
 
 
 def create_keyboard(user) -> InlineKeyboardMarkup:
@@ -32,9 +30,6 @@ def create_error_result(user, message: str) -> InlineQueryResultArticle:
 def create_audio_result(text: str, user, keyboard: bool = True, language=None):
     if not language:
         language = user.language
-
-    if antiflood.is_flooding(user.id):
-        return None
 
     link = tts.create_link(text=text, language=language, slow=user.get_setting(Settings.SLOW_MODE, bool))
     title = user.get_message('inline_create_audio')
