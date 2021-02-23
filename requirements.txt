@@ -1,0 +1,15 @@
+flask
+psycopg2-binary
+pony
+gTTS
+ffmpeg-python
+httpx
+apscheduler
+tgcrypto
+pyrogram
+matplotlib
+numpy
+pandas
+bs4
+lxml
+plate

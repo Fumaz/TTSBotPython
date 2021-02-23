@@ -1,0 +1,78 @@
+{
+  "full_name": "English",
+  "flag": ":FLAG_UNITED_STATES:",
+  "language_selection": [
+    "<b>Language {flag}</b>\n",
+    "\n",
+    "<code>Please select your language.</code>\n"
+  ],
+  "language_set": "{flag} Language set successfully.",
+  "toggle_always_speak": "Always Speak: {status}",
+  "created_with": ":SPEAKER_HIGH_VOLUME: <b>Created with</b> @TTSBot<b>.</b>",
+  "awaiting_text": ":THOUGHT_BALLOON: <code>Send the text you want to convert.</code>",
+  "anti_flood": ":HOURGLASS_NOT_DONE: <code>Please wait</code> <b>5 seconds</b> <code>before your next audio.</code>",
+  "creating_audio": ":THOUGHT_BALLOON: <b>Creating audio... Please wait.</b>",
+  "empty_text": ":THOUGHT_BALLOON: Please type your text...",
+  "inline_create_audio": ":SPEAKER_HIGH_VOLUME: Create audio!",
+  "main_menu": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>{image}\n",
+    "\n",
+    "Welcome to the bot!\n",
+    "With this bot you can create\n",
+    "audios from any text message!\n",
+    "\n",
+    ":INFORMATION: <i>Use the buttons below.</i>\n"
+  ],
+  "inline_language": "{flag} Change language...",
+  "about_me": [
+    "<b>About me :PACKAGE:</b>\n",
+    "\n",
+    "Bot developed in <code>Python</code> by <a href='https://fumaz.dev'>Fumaz</a>.\n",
+    "Source code available on <a href='https://github.com/Fumaz/TTSBot'>GitHub</a>."
+  ],
+  "language_button": "Language {flag}",
+  "info_button": "Info :PACKAGE:",
+  "back_button": "Back :BACK_ARROW:",
+  "menu_button": "Menu :HOUSES:",
+  "always_speak_button": "Always Speak {status}",
+  "slow_mode_button": "Slow Voice {status}",
+  "speak_button": "Speak :SPEAKER_HIGH_VOLUME:",
+  "speak_again_button": "Speak Again :SPEAKER_HIGH_VOLUME:",
+  "share_button": "Share :LINK:",
+  "refresh_button": "Refresh :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "settings_button": "Settings :GEAR:",
+  "referral_button": "Referral :BUSTS_IN_SILHOUETTE:",
+  "inline_button": "Inline :LINK:",
+  "settings_message": [
+    "<b>Settings</b> :GEAR:\n",
+    "\n",
+    "» Always Speak: {always_speak}\n",
+    "» Slow Voice: {slow_mode}\n",
+    "» Language: {flag}\n",
+    "\n",
+    ":INFORMATION: <i>More settings coming soon...</i>\n"
+  ],
+  "toggle_slow_mode": "Slow Voice: {status}",
+  "character_limit_message": ":CROSS_MARK: <b>That message is too long.</b>",
+  "character_limit_inline": ":CROSS_MARK: That message is too long.",
+  "group_speak_no_arguments": ":CROSS_MARK: <b>Usage:</b> /speak (text)",
+  "group_self_was_added": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>\n",
+    "\n",
+    "<i>Thanks for adding me to the group!</i>\n",
+    "You can use <code>/speak (text)</code> to create an audio.\n",
+    "\n",
+    ":INFORMATION: Settings aren't yet available in groups.\n"
+  ],
+  "group_redirect_message": ":UNLOCKED: <code>To use that command...</code>",
+  "group_redirect_button": "Click here!",
+  "add_to_group_button": "Add me to a group! :BUSTS_IN_SILHOUETTE:",
+  "stats_button": "Stats \ud83d\udcc8",
+  "stats_message": [
+    "<b>Stats</b> \ud83d\udcc8\n",
+    "\n",
+    ":BUSTS_IN_SILHOUETTE: Users \u00bb <code>{users}</code>\n",
+    ":THOUGHT_BALLOON: Groups \u00bb <code>{groups}</code>\n",
+    ":SPEAKER_HIGH_VOLUME: Audios \u00bb <code>{audios}</code>\n"
+  ]
+}

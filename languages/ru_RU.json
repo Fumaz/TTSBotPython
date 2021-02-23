@@ -1,0 +1,77 @@
+{
+  "full_name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439",
+  "flag": ":FLAG_RUSSIA:",
+  "language_selection": [
+    "<b>\u042f\u0437\u044b\u043a {flag}</b>\n",
+    "\n",
+    "<code>\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0441\u0432\u043e\u0439 \u044f\u0437\u044b\u043a.</code>\n"
+  ],
+  "language_set": "{flag} \u042f\u0437\u044b\u043a \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d \u0443\u0441\u043f\u0435\u0448\u043d\u043e.",
+  "toggle_always_speak": "\u0412\u0441\u0435\u0433\u0434\u0430 \u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c: {status}",
+  "created_with": ":SPEAKER_HIGH_VOLUME: <b>\u0421\u043e\u0437\u0434\u0430\u043d\u043e \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e</b> @TTSBot<b>.</b>",
+  "awaiting_text": ":THOUGHT_BALLOON: <code>\u041e\u0442\u043f\u0440\u0430\u0432\u044c\u0442\u0435 \u0442\u0435\u043a\u0441\u0442, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0445\u043e\u0442\u0438\u0442\u0435 \u043f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u044c.</code>",
+  "anti_flood": ":HOURGLASS_NOT_DONE: <code>\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435</code> <b>5 \u0441\u0435\u043a\u0443\u043d\u0434\u044b</b> <code>\u043f\u0435\u0440\u0435\u0434 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u043c \u0437\u0432\u0443\u043a\u043e\u043c.</code>",
+  "creating_audio": ":THOUGHT_BALLOON: <b>\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0430\u0443\u0434\u0438\u043e... \u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435.</b>",
+  "empty_text": ":THOUGHT_BALLOON: \u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043a\u0441\u0442...",
+  "inline_create_audio": ":SPEAKER_HIGH_VOLUME: \u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0430\u0443\u0434\u0438\u043e!",
+  "main_menu": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>{image}\n",
+    "\n",
+    "\u0414\u043e\u0431\u0440\u043e \u043f\u043e\u0436\u0430\u043b\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u043e\u0442!\n",
+    "\u0421 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u044d\u0442\u043e\u0433\u043e \u0431\u043e\u0442\u0430 \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u0442\u044c\n",
+    "\u0430\u0443\u0434\u0438\u043e \u0438\u0437 \u043b\u044e\u0431\u043e\u0433\u043e \u0442\u0435\u043a\u0441\u0442\u043e\u0432\u043e\u0433\u043e \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f!\n",
+    "\n",
+    ":INFORMATION: <i>\u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 \u043a\u043d\u043e\u043f\u043a\u0438 \u043d\u0438\u0436\u0435.</i>\n"
+  ],
+  "inline_language": "{flag} \u0418\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u044f\u0437\u044b\u043a...",
+  "about_me": [
+    "<b>\u041e\u0431\u043e \u043c\u043d\u0435 :PACKAGE:</b>\n",
+    "\n",
+    "\u0411\u043e\u0442, \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0439 \u043d\u0430 <code>Python</code> {creator}.\n"
+  ],
+  "language_button": "\u042f\u0437\u044b\u043a {flag}",
+  "info_button": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f :PACKAGE:",
+  "back_button": "\u041d\u0430\u0437\u0430\u0434 :BACK_ARROW:",
+  "menu_button": "\u041c\u0435\u043d\u044e :HOUSES:",
+  "always_speak_button": "\u0412\u0441\u0435\u0433\u0434\u0430 \u0433\u043e\u0432\u043e\u0440\u0438 ",
+  "speak_button": "\u0413\u043e\u0432\u043e\u0440\u0438 :SPEAKER_HIGH_VOLUME:",
+  "speak_again_button": "\u0413\u043e\u0432\u043e\u0440\u0438 \u0435\u0449\u0435 \u0440\u0430\u0437 :SPEAKER_HIGH_VOLUME:",
+  "slow_mode_button": "Slow Voice {status}",
+  "share_button": "Share :LINK:",
+  "refresh_button": "Refresh :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "settings_button": "Settings :GEAR:",
+  "referral_button": "Referral :BUSTS_IN_SILHOUETTE:",
+  "inline_button": "Inline :LINK:",
+  "settings_message": [
+    "<b>Settings</b> :GEAR:\n",
+    "\n",
+    "\u00bb Always Speak: {always_speak}\n",
+    "\u00bb Slow Voice: {slow_mode}\n",
+    ":RAINBOW_FLAG: Language: {language}",
+    "\n",
+    ":INFORMATION: <i>More settings coming soon...</i>\n"
+  ],
+  "toggle_slow_mode": "Slow Voice: {status}",
+  "character_limit_message": ":CROSS_MARK: <b>That message is too long.</b>",
+  "character_limit_inline": ":CROSS_MARK: That message is too long.",
+  "group_speak_no_arguments": ":CROSS_MARK: <b>Usage:</b> /speak (text)",
+  "group_self_was_added": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>\n",
+    "\n",
+    "<i>Thanks for adding me to the group!</i>\n",
+    "You can use <code>/speak (text)</code> to create an audio.\n",
+    "\n",
+    ":INFORMATION: Settings aren't yet available in groups.\n"
+  ],
+  "group_redirect_message": ":UNLOCKED: <code>To use that command...</code>",
+  "group_redirect_button": "Click here!",
+  "add_to_group_button": "Add me to a group! :BUSTS_IN_SILHOUETTE:",
+  "stats_button": "Stats \ud83d\udcc8",
+  "stats_message": [
+    "<b>Stats</b> \ud83d\udcc8\n",
+    "\n",
+    ":BUSTS_IN_SILHOUETTE: Users \u00bb <code>{users}</code>\n",
+    ":THOUGHT_BALLOON: Groups \u00bb <code>{groups}</code>\n",
+    ":SPEAKER_HIGH_VOLUME: Audios \u00bb <code>{audios}</code>\n"
+  ]
+}

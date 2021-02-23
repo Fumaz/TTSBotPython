@@ -1,0 +1,77 @@
+{
+  "full_name": "Espanol",
+  "flag": ":FLAG_SPAIN:",
+  "language_selection": [
+    "<b>Idioma {flag}</b>\n",
+    "\n",
+    "<code>Seleccione su idioma.</code>\n"
+  ],
+  "language_set": "{flag} Idioma configurado correctamente.",
+  "toggle_always_speak": "Habla siempre: {status}",
+  "created_with": ":SPEAKER_HIGH_VOLUME: <b>Creado con</b> @TTSBot<b>.</b>",
+  "awaiting_text": ":THOUGHT_BALLOON: <code>Env\u00ede el texto que desea convertir.</code>",
+  "anti_flood": ":HOURGLASS_NOT_DONE: <code>Por favor espera</code> <b>5 secondos</b> <code>antes de tu pr\u00f3ximo audio.</code>",
+  "creating_audio": ":THOUGHT_BALLOON: <b>Creando audio ... Espere.</b>",
+  "empty_text": ":THOUGHT_BALLOON: Por favor escriba su texto...",
+  "inline_create_audio": ":SPEAKER_HIGH_VOLUME: Crear audio!",
+  "main_menu": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>{image}\n",
+    "\n",
+    "Bienvenido al bot!\n",
+    "Con este bot puedes crear\n",
+    "audios de cualquier mensaje de texto!\n",
+    "\n",
+    ":INFORMATION: <i>Utilice los botones de abajo.</i>\n"
+  ],
+  "inline_language": "{flag} Cambiar idioma...",
+  "about_me": [
+    "<b>About me :PACKAGE:</b>\n",
+    "\n",
+    "Bot desarrollado en <code>Python</code> por {creator}.\n"
+  ],
+  "language_button": "Idioma {flag}",
+  "info_button": "Info :PACKAGE:",
+  "back_button": "Atras :BACK_ARROW:",
+  "menu_button": "Men\u00f9 :HOUSES:",
+  "always_speak_button": "Habla siempre ",
+  "speak_button": "Habla :SPEAKER_HIGH_VOLUME:",
+  "speak_again_button": "Habla de nuevo :SPEAKER_HIGH_VOLUME:",
+  "slow_mode_button": "Slow Voice {status}",
+  "share_button": "Share :LINK:",
+  "refresh_button": "Refresh :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "settings_button": "Settings :GEAR:",
+  "referral_button": "Referral :BUSTS_IN_SILHOUETTE:",
+  "inline_button": "Inline :LINK:",
+  "settings_message": [
+    "<b>Settings</b> :GEAR:\n",
+    "\n",
+    "\u00bb Always Speak: {always_speak}\n",
+    "\u00bb Slow Voice: {slow_mode}\n",
+    ":RAINBOW_FLAG: Language: {language}",
+    "\n",
+    ":INFORMATION: <i>More settings coming soon...</i>\n"
+  ],
+  "toggle_slow_mode": "Slow Voice: {status}",
+  "character_limit_message": ":CROSS_MARK: <b>That message is too long.</b>",
+  "character_limit_inline": ":CROSS_MARK: That message is too long.",
+  "group_speak_no_arguments": ":CROSS_MARK: <b>Usage:</b> /speak (text)",
+  "group_self_was_added": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>\n",
+    "\n",
+    "<i>Thanks for adding me to the group!</i>\n",
+    "You can use <code>/speak (text)</code> to create an audio.\n",
+    "\n",
+    ":INFORMATION: Settings aren't yet available in groups.\n"
+  ],
+  "group_redirect_message": ":UNLOCKED: <code>To use that command...</code>",
+  "group_redirect_button": "Click here!",
+  "add_to_group_button": "Add me to a group! :BUSTS_IN_SILHOUETTE:",
+  "stats_button": "Stats \ud83d\udcc8",
+  "stats_message": [
+    "<b>Stats</b> \ud83d\udcc8\n",
+    "\n",
+    ":BUSTS_IN_SILHOUETTE: Users \u00bb <code>{users}</code>\n",
+    ":THOUGHT_BALLOON: Groups \u00bb <code>{groups}</code>\n",
+    ":SPEAKER_HIGH_VOLUME: Audios \u00bb <code>{audios}</code>\n"
+  ]
+}

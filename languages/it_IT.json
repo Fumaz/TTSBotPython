@@ -1,0 +1,78 @@
+{
+  "full_name": "Italiano",
+  "flag": ":FLAG_ITALY:",
+  "language_selection": [
+    "<b>Lingua {flag}</b>\n",
+    "\n",
+    "<code>Seleziona la tua lingua.</code>\n"
+  ],
+  "language_set": "{flag} Lingua impostata correttamente.",
+  "toggle_always_speak": "Parla sempre: {status}",
+  "created_with": ":SPEAKER_HIGH_VOLUME: <b>Creato con</b> @TTSBot<b>.</b>",
+  "awaiting_text": ":THOUGHT_BALLOON: <code>Ora invia il testo.</code>",
+  "anti_flood": ":HOURGLASS_NOT_DONE: <code>Devi aspettare</code> <b>5 secondi</b> <code>tra un audio e l'altro.</code>",
+  "creating_audio": ":THOUGHT_BALLOON: <b>Creazione audio in corso...</b>",
+  "empty_text": ":THOUGHT_BALLOON: Inserisci un testo valido.",
+  "inline_create_audio": ":SPEAKER_HIGH_VOLUME: Crea audio!",
+  "main_menu": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>{image}\n",
+    "\n",
+    "Benvenuto nel bot!\n",
+    "Con questo bot puoi creare\n",
+    "audio da qualsiasi messaggio!\n",
+    "\n",
+    ":INFORMATION: <i>Usa i pulsanti qui sotto.</i>\n"
+  ],
+  "inline_language": "{flag} Cambia lingua...",
+  "about_me": [
+    "<b>Info :PACKAGE:</b>\n",
+    "\n",
+    "Bot sviluppato in <code>Python</code> da <a href='https://fumaz.dev'>Fumaz</a>.\n",
+    "Sorgente disponibile su <a href='https://github.com/Fumaz/TTSBot'>GitHub</a>."
+  ],
+  "language_button": "Lingua {flag}",
+  "back_button": "Indietro :BACK_ARROW:",
+  "menu_button": "Men\u00f9 :HOUSES:",
+  "always_speak_button": "Parla sempre {status}",
+  "speak_button": "Parla :SPEAKER_HIGH_VOLUME:",
+  "speak_again_button": "Parla di nuovo :SPEAKER_HIGH_VOLUME:",
+  "settings_message": [
+    "<b>Impostazioni </b> :GEAR:\n",
+    "\n",
+    "» Parla Sempre: {always_speak}\n",
+    "» Voce Lenta: {slow_mode}\n",
+    "» Lingua: {flag}\n",
+    "\n",
+    ":INFORMATION: <i>Altre impostazioni in arrivo...</i>\n"
+  ],
+  "toggle_slow_mode": "Voce Lenta: {status}",
+  "character_limit_message": ":CROSS_MARK: <b>Messaggio troppo lungo.</b>",
+  "character_limit_inline": ":CROSS_MARK: Messaggio troppo lungo.",
+  "slow_mode_button": "Voce Lenta {status}",
+  "share_button": "Condividi :LINK:",
+  "refresh_button": "Aggiorna :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "settings_button": "Impostazioni :GEAR:",
+  "group_speak_no_arguments": ":CROSS_MARK: <b>Utilizzo:</b> /speak (testo)",
+  "group_self_was_added": [
+    "<b>Text To Speech :SPEAKER_HIGH_VOLUME:</b>\n",
+    "\n",
+    "<i>Grazie per avermi aggiunto al gruppo!</i>\n",
+    "Puoi usare <code>/speak (testo)</code> per creare un audio.\n",
+    "\n",
+    ":INFORMATION: Le impostazioni non sono ancora disponibili nei gruppi.\n"
+  ],
+  "group_redirect_message": ":UNLOCKED: <code>Per usare quel comando...</code>",
+  "group_redirect_button": "Clicca qui!",
+  "add_to_group_button": "Aggiungimi a un gruppo! :BUSTS_IN_SILHOUETTE:",
+  "stats_button": "Statistiche \ud83d\udcc8",
+  "info_button": "Info :PACKAGE:",
+  "referral_button": "Referral :BUSTS_IN_SILHOUETTE:",
+  "inline_button": "Inline :LINK:",
+  "stats_message": [
+    "<b>Stats</b> \ud83d\udcc8\n",
+    "\n",
+    ":BUSTS_IN_SILHOUETTE: Utenti \u00bb <code>{users}</code>\n",
+    ":THOUGHT_BALLOON: Gruppi \u00bb <code>{groups}</code>\n",
+    ":SPEAKER_HIGH_VOLUME: Audio \u00bb <code>{audios}</code>\n"
+  ]
+}

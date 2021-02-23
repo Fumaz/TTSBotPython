@@ -1,0 +1,51 @@
+version: '3'
+
+volumes:
+  pg_data: { }
+  db_data: { }
+
+networks:
+  nginx_net:
+    external:
+      name: nginx_net
+  internal: { }
+
+services:
+  bot:
+    image: fumaz/tts-bot
+    container_name: "tts_bot"
+    build: .
+    working_dir: /usr/src/app
+    volumes:
+      - ./src:/usr/src/app
+      - ./languages:/usr/src/app/languages
+      - ./audios:/usr/src/app/audios
+    command: python3 run.py
+    networks:
+      - internal
+      - nginx_net
+    depends_on:
+      - postgres
+      - oldgres
+  postgres:
+    image: postgres
+    container_name: "tts_db"
+    environment:
+      POSTGRES_DB: 'tts'
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - internal
+    restart: unless-stopped
+  oldgres:
+    image: postgres
+    container_name: "tts_odb"
+    environment:
+      POSTGRES_DB: 'ttsbot'
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - internal
+    restart: unless-stopped
