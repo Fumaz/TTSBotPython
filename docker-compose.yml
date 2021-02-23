@@ -25,7 +25,6 @@ services:
       - nginx_net
     depends_on:
       - postgres
-      - oldgres
   postgres:
     image: postgres
     container_name: "tts_db"
