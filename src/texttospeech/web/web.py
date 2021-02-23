@@ -1,5 +1,6 @@
 import os
 from threading import Thread
+from time import sleep
 
 from flask import Flask, jsonify, send_file
 
@@ -18,6 +19,11 @@ def audio(filename: str):
 
     file = os.path.join(AUDIO_FOLDER, filename)
 
+    def remove_audio():
+        sleep(10)
+        os.remove(file)
+
+    Thread(target=remove_audio).start()
     return send_file(file, mimetype='audio/ogg')
 
 
