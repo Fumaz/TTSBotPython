@@ -15,4 +15,5 @@ async def on_about_me(_, callback):
     user = callback.db_user
 
     await callback.answer()
-    await callback.edit_message_text(user.get_message("about_me"), reply_markup=create_keyboard(user))
+    await callback.edit_message_text(user.get_message("about_me"), reply_markup=create_keyboard(user),
+                                     disable_web_page_preview=True)
