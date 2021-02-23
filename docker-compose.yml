@@ -1,7 +1,6 @@
 version: '3'
 
 volumes:
-  pg_data: { }
   db_data: { }
 
 networks:
@@ -35,17 +34,6 @@ services:
       POSTGRES_HOST_AUTH_METHOD: 'trust'
     volumes:
       - db_data:/var/lib/postgresql/data
-    networks:
-      - internal
-    restart: unless-stopped
-  oldgres:
-    image: postgres
-    container_name: "tts_odb"
-    environment:
-      POSTGRES_DB: 'ttsbot'
-      POSTGRES_HOST_AUTH_METHOD: 'trust'
-    volumes:
-      - pg_data:/var/lib/postgresql/data
     networks:
       - internal
     restart: unless-stopped
