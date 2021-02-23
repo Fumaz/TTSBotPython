@@ -83,6 +83,11 @@ async def execute(client, message, origin, chat=None, keyboard=True, reply_to_me
     if await is_flooding(user, message) or await is_above_char_limit(user, message, text):
         return
 
+    text = text.replace('\n', '').strip()
+
+    if not text:
+        return
+
     await reply_audio(user=user, client=client, message=message,
                       text=text, origin=origin, language=language,
                       keyboard=keyboard, reply_to_message_id=reply_to_message_id,

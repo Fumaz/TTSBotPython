@@ -52,7 +52,7 @@ async def on_inline_query(_, query):
     latest[query.from_user.id] = query.id
 
     user = query.db_user
-    text = query.query.strip()
+    text = query.query.replace('\n', '').strip()
 
     switch_pm_text = user.get_message('inline_language')
     switch_pm_parameter = 'language'
