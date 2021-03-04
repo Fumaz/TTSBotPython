@@ -10,7 +10,7 @@ from texttospeech.db.models import *
 from texttospeech.util import config
 from texttospeech.util.antiflood import AntiFlood
 
-antiflood = AntiFlood(max_amount=1, timeout=5)
+antiflood = AntiFlood(max_amount=2, timeout=5)
 
 
 def create_input_keyboard(user) -> InlineKeyboardMarkup:
