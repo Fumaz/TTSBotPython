@@ -52,14 +52,17 @@ async def send_audio(text: str, client: Client, user: User, chat: Chat = None, k
     slow_mode = user.get_setting(Settings.SLOW_MODE, bool)
     file = tts.create_audio(text=text, language=language, slow=slow_mode)
 
-    message = user.get_message('created_with')
-    keyboard = create_keyboard(user) if keyboard else None
+    try:
+        message = user.get_message('created_with')
+        keyboard = create_keyboard(user) if keyboard else None
 
-    if to_delete:
-        await to_delete.delete(revoke=True)
+        if to_delete:
+            await to_delete.delete(revoke=True)
 
-    await client.send_voice(chat_id=chat.id if chat else user.id, voice=file, caption=message,
-                            reply_markup=keyboard, reply_to_message_id=reply_to_message_id)
+        await client.send_voice(chat_id=chat.id if chat else user.id, voice=file, caption=message,
+                                reply_markup=keyboard, reply_to_message_id=reply_to_message_id)
+    except:
+        pass
 
     os.remove(file)
 
