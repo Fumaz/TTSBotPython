@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 from pyrogram import Client
@@ -12,6 +13,19 @@ client = Client(session_name=config.SESSION_NAME,
                 workers=config.BOT_WORKERS)
 
 
+def clear_audios():
+    audios = os.listdir(config.AUDIOS_DIR)
+    print(f'Clearing {len(audios)} old audios...')
+
+    for audio in audios:
+        try:
+            os.remove(config.AUDIOS_DIR + audio)
+        except:
+            pass
+
+
 def run():
+    clear_audios()
+
     client.start_time = datetime.now()
     client.run()

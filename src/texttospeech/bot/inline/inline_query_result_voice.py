@@ -71,7 +71,7 @@ class InlineQueryResultVoice(InlineQueryResult):
             Content of the message to be sent instead of the voice file.
     """
 
-    async def write(self):
+    async def write(self, client: "pyrogram.Client"):
         voice = types.InputWebDocument(
             url=self.voice_url,
             size=0,
@@ -97,10 +97,10 @@ class InlineQueryResultVoice(InlineQueryResult):
             thumb=thumb,
             content=voice,
             send_message=(
-                self.input_message_content.write(self.reply_markup)
+                await self.input_message_content.write(client, self.reply_markup)
                 if self.input_message_content
                 else types.InputBotInlineMessageMediaAuto(
-                    reply_markup=self.reply_markup.write() if self.reply_markup else None,
+                    reply_markup=await self.reply_markup.write(client) if self.reply_markup else None,
                     **await(Parser(None)).parse(self.caption, self.parse_mode)
                 )
             )

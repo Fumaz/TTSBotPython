@@ -1,10 +1,11 @@
 import logging
 import os
+from threading import Thread
+from time import sleep
 
 import ffmpeg
 from gtts import gTTS
 from gtts.lang import tts_langs
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from texttospeech.util import config, files
 
@@ -104,5 +105,11 @@ def create_link(text: str, language: str = 'en_US', slow: bool = False) -> str:
     """
 
     filename = create_audio(text=text, language=language, slow=slow)
+
+    def remove_audio():
+        sleep(45)
+        os.remove(filename)
+
+    Thread(target=remove_audio).start()
 
     return f'{config.AUDIOS_DOMAIN}/{filename.split("/")[-1]}'

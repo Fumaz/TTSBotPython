@@ -70,8 +70,9 @@
   "stats_message": [
     "<b>Stats</b> \ud83d\udcc8\n",
     "\n",
-    ":BUSTS_IN_SILHOUETTE: Users \u00bb <code>{users}</code>\n",
-    ":THOUGHT_BALLOON: Groups \u00bb <code>{groups}</code>\n",
-    ":SPEAKER_HIGH_VOLUME: Audios \u00bb <code>{audios}</code>\n"
+    ":BUSTS_IN_SILHOUETTE: Users \u00bb <code>{users}</code> (+{users_today})\n",
+    ":BALLOON: Active Users Today \u00bb <code>{active_users}</code>\n",
+    ":THOUGHT_BALLOON: Groups \u00bb <code>{groups}</code> (+{groups_today})\n",
+    ":SPEAKER_HIGH_VOLUME: Audios \u00bb <code>{audios}</code> (+{audios_today})"
   ]
 }

@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -19,6 +21,13 @@ async def on_stats(_, callback):
         groups = Chat.select().count()
         audios = Audio.select().count()
 
+        users_today = User.select(lambda u: u.creation_date >= (datetime.now() - timedelta(hours=24))).count()
+        groups_today = Chat.select(lambda c: c.creation_date >= (datetime.now() - timedelta(hours=24))).count()
+        audios_today = Audio.select(lambda a: a.creation_date >= (datetime.now() - timedelta(hours=24))).count()
+        active_users = User.select(lambda u: u.last_update >= (datetime.now() - timedelta(hours=24))).count()
+
         await callback.answer()
-        await callback.edit_message_text(user.get_message("stats_message", users=users, groups=groups, audios=audios),
+        await callback.edit_message_text(user.get_message("stats_message", users=users, groups=groups, audios=audios,
+                                                          users_today=users_today, groups_today=groups_today,
+                                                          audios_today=audios_today, active_users=active_users),
                                          reply_markup=create_keyboard(user))

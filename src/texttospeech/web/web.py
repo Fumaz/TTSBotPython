@@ -19,11 +19,6 @@ def audio(filename: str):
 
     file = os.path.join(AUDIO_FOLDER, filename)
 
-    def remove_audio():
-        sleep(10)
-        os.remove(config.AUDIOS_DIR + filename)
-
-    Thread(target=remove_audio).start()
     return send_file(file, mimetype='audio/ogg')
 
 
