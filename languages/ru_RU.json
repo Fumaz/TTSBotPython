@@ -27,7 +27,7 @@
   "about_me": [
     "<b>\u041e\u0431\u043e \u043c\u043d\u0435 :PACKAGE:</b>\n",
     "\n",
-    "\u0411\u043e\u0442, \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0439 \u043d\u0430 <code>Python</code> {creator}.\n"
+    "\u0411\u043e\u0442, \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0439 \u043d\u0430 <code>Python</code> <a href='https://fumaz.dev'>Fumaz</a>.\n"
   ],
   "language_button": "\u042f\u0437\u044b\u043a {flag}",
   "info_button": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f :PACKAGE:",

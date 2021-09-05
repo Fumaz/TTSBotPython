@@ -27,7 +27,7 @@
   "about_me": [
     "<b>\u00c0 propos de moi :PACKAGE:</b>\n",
     "\n",
-    "Bot d\u00e9velopp\u00e9 en <code>Python</code> par {creator}.\n"
+    "Bot d\u00e9velopp\u00e9 en <code>Python</code> par <a href='https://fumaz.dev'>Fumaz</a>.\n"
   ],
   "language_button": "Langue {flag}",
   "info_button": "Info :PACKAGE:",
