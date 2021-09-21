@@ -15,6 +15,10 @@ def create_keyboard(user) -> InlineKeyboardMarkup:
 
 @Client.on_callback_query(cfilters.callback_data("stats"))
 async def on_stats(_, callback):
+    if not callback.db_user.is_admin:
+        await callback.answer(text='N/A', show_alert=True)
+        return
+
     with db_session:
         user = callback.db_user
         users = User.select().count()

@@ -10,7 +10,7 @@ client = Client(session_name=config.SESSION_NAME,
                 api_hash=config.API_HASH,
                 plugins=dict(root=config.PLUGINS_DIR),
                 bot_token=config.BOT_TOKEN,
-                workers=config.BOT_WORKERS)
+                workers=16)
 
 
 def clear_audios():

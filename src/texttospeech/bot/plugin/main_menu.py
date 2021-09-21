@@ -48,7 +48,10 @@ async def on_start_command(client, message):
             await settings.on_settings_command(client, message)
             return
 
-    await message.reply_text(create_message(user), reply_markup=create_keyboard(user), disable_web_page_preview=False)
+    text = create_message(user)
+    keyboard = create_keyboard(user)
+
+    await message.reply_text(text, reply_markup=keyboard, disable_web_page_preview=False)
 
 
 @Client.on_callback_query(cfilters.callback_data('main_menu'))

@@ -1,5 +1,4 @@
 import logging
-from abc import ABC, abstractmethod
 from datetime import datetime
 from typing import Union, Type
 
@@ -10,6 +9,7 @@ from pyrogram import types
 from texttospeech.localization import languages
 from texttospeech.util import config
 from texttospeech.util.emojifier import Emoji
+from ..localization.languages import get_message
 
 db = Database()
 updates = Union[types.User, types.Message, types.InlineQuery,
@@ -143,8 +143,6 @@ class User(db.Entity):
         self.last_update = datetime.now()
 
     def get_message(self, name: str, **kwargs) -> str:
-        from ..localization.languages import get_message
-
         return get_message(message_name=name, language_name=self.language, user=self, **kwargs)
 
     @db_session

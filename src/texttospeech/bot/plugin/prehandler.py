@@ -1,4 +1,6 @@
-from pyrogram import Client
+from timeit import timeit
+
+from pyrogram import Client, StopPropagation
 
 from texttospeech.db.models import *
 from .. import handlers
