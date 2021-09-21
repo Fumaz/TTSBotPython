@@ -90,7 +90,7 @@ class User(db.Entity):
     A telegram user.
     """
 
-    id = PrimaryKey(int)
+    id = PrimaryKey(int, size=64)
     first_name = Required(str)
     last_name = Optional(str)
     username = Optional(str)

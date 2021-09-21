@@ -1,5 +1,5 @@
 flask
-psycopg2-binary
+psycopg2
 pony
 gTTS
 ffmpeg-python
@@ -7,9 +7,4 @@ httpx
 apscheduler
 tgcrypto
 pyrogram
-matplotlib
-numpy
-pandas
-bs4
-lxml
 plate
