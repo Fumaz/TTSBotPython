@@ -99,6 +99,7 @@ class User(db.Entity):
     start_reason = Required(str, default=StartReason.UNKNOWN)
     last_update = Required(datetime, default=datetime.now)
     creation_date = Required(datetime, default=datetime.now)
+    is_active = Required(bool, default=True)
 
     audios = Set('Audio')
     settings = Set('Setting')

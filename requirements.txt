@@ -8,3 +8,4 @@ apscheduler
 tgcrypto
 pyrogram
 plate
+sentry-sdk
